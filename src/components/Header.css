@@ -1,0 +1,219 @@
+.header {
+  background: white;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+/* FIX: full-width container */
+.header .container {
+  width: 100%;
+  padding: 0 20px;   /* yeh safe padding hai */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- Logo ---------- */
+.logo img.logo-img {
+  height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.logo img.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- NAV ---------- */
+.nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 50%;
+  background: black;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- Mobile Menu Button ---------- */
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 768px) {
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .logo img.logo-img {
+    height: 40px;
+  }
+
+  /* container full width on mobile */
+  .header .container {
+    padding: 0 15px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 480px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo img.logo-img {
+  height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.logo img.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 50%;
+  background: black;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav a:hover {
+  color: black;
+  text-shadow: black;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .logo img.logo-img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+}

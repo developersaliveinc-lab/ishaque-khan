@@ -1,0 +1,235 @@
+.contact-monster {
+  background: #fbfbfb
+  ;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO SECTION */
+.contact-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px; /* prevent overflow on mobile */
+}
+
+.contact-mega-title {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: black;
+
+}
+
+.glow-cyan {
+  color:black;
+ 
+}
+
+.contact-subtitle {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: red;
+  
+}
+
+/* MAIN CONTACT */
+.contact-main {
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+/* FORM SECTION */
+.contact-form-section {
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  padding: 60px 40px;
+  border-radius: 25px;
+  border: 2px solid #ff0000;
+
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* limit width */
+}
+
+.contact-form-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: black;
+  animation: rotateGradient 8s linear infinite;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+@keyframes rotateGradient {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-title {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 18px;
+  border: 2px solid #ff0000;
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff5555;
+ 
+  background: #111;
+  transform: scale(1.02);
+}
+
+/* SEND BUTTON */
+.send-btn {
+  width: 50%;
+  padding: 20px;
+  background: red;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px auto ;
+
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 100px #969191;
+}
+
+/* CONTACT INFO */
+.contact-info-section {
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  padding: 60px 40px;
+  border-radius: 25px;
+  border: 2px solid #ff0000;
+  
+  width: 100%;
+  max-width: 600px;
+}
+
+.info-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #f5f2f2;
+  margin-bottom: 40px;
+}
+
+.address-card {
+  background: #000;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #ff0000;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.address-card:hover {
+
+  transform: translateY(-5px);
+}
+
+.map-container {
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+/* FINAL CTA */
+.final-cta {
+  text-align: center;
+  padding: 100px 20px;
+  background: #111;
+}
+
+.mega-glow {
+  font-size: 3rem;
+  color: #ffffff;
+ 
+}
+
+.final-cta p {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #f30000;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .contact-mega-title { font-size: 4.5rem; }
+  .contact-subtitle { font-size: 1.8rem; }
+  .contact-form-section, .contact-info-section { padding: 40px; }
+}
+
+@media (max-width: 768px) {
+  .contact-mega-title { font-size: 3rem; letter-spacing: 6px; }
+  .contact-subtitle { font-size: 1.4rem; }
+  .form-title, .info-title { font-size: 2rem; }
+  .send-btn { font-size: 1.3rem; padding: 15px; }
+  .contact-form-section, .contact-info-section { max-width: 90%; padding: 30px; }
+}
+
+@media (max-width: 480px) {
+  .contact-mega-title { font-size: 2.5rem; letter-spacing: 4px; }
+  .contact-subtitle { font-size: 1.2rem; }
+  .form-title, .info-title { font-size: 1.5rem; }
+  .send-btn { font-size: 1.2rem; padding: 12px; }
+  .contact-form-section, .contact-info-section { padding: 20px; }
+}
