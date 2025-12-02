@@ -149,7 +149,7 @@ const About = () => {
             </div>
 
             <div className="founder-info">
-              <h3>Ishaque Khan</h3>
+              <h3>Khabib Nurmagomedov</h3>
               <p className="role">Founder & CEO</p>
               <p className="bio">
                 Started from a small room in Vashi with just a laptop and unbreakable willpower.
