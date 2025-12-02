@@ -1,8 +1,8 @@
 .alive-footer {
-  background:rgb(22 43 47); /* your new color */
+  background: rgb(22 43 47);
   color: #fff;
   font-family: 'Arial', sans-serif;
-  padding: 7px 45px 22px;
+  padding: 20px 45px;
   text-align: center;
   position: relative;
 }
@@ -92,14 +92,14 @@
   transform: scale(1.1);
 }
 
-/* Footer Logo EXACT */
+/* Footer Logo */
 .footer-logo-section {
   text-align: right;
   margin: -76px 47px 3px;
-  margin-right: 170px;
 }
 
 .footer-logo {
+  display: inline-block;
   height: 51px;
   background: transparent;
 }
@@ -157,12 +157,13 @@
 
   .footer-logo-section {
     text-align: center;
-    margin: 10px auto;
-    margin-right: 0;
+    margin: 20px auto;
   }
 
   .footer-logo {
+    display: inline-block;
     height: 50px;
+    max-width: 80%;
   }
 
   .footer-nav ul li,

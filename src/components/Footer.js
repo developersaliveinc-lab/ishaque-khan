@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Logo under Services/Contact */}
+      {/* Footer Logo */}
       <div className="footer-logo-section">
         <img src="/images/footer-logo.png" alt="Alive Inc Logo" className="footer-logo" />
       </div>
