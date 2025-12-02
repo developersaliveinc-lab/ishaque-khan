@@ -1,26 +1,28 @@
-
 .header .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .logo img.logo-img {
   height: 50px;
   width: auto;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .logo img.logo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .nav {
   display: flex;
   gap: 2.5rem;
+  align-items: center;
 }
 
 .nav a {
@@ -37,46 +39,51 @@
   position: absolute;
   width: 0;
   height: 3px;
-  bottom: -5px;
+  bottom: -8px;
   left: 50%;
   background: black;
-  transition: all 0.3s ease;
+  transition: width 0.3s ease;
   transform: translateX(-50%);
 }
 
 .nav a:hover {
   color: black;
-  text-shadow: black;
 }
 
 .nav a:hover::after {
   width: 100%;
 }
 
+/* Mobile Menu Button */
 .menu-btn {
   display: none;
-  font-size: 2rem;
-  color: red;
   background: none;
   border: none;
+  font-size: 2rem;
+  color: red;
   cursor: pointer;
+  z-index: 1001;
+  padding: 0.5rem;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .nav {
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
-
+  
   .logo img.logo-img {
-    height: 40px;
+    height: 45px;
   }
 }
 
 @media (max-width: 480px) {
+  /* Show hamburger */
   .menu-btn {
     display: block;
   }
 
+  /* Hide nav by default on mobile */
   .nav {
     display: none;
     flex-direction: column;
@@ -84,17 +91,39 @@
     top: 100%;
     right: 0;
     background: white;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 0 0 10px 10px;
+    width: 220px;
+    padding: 1.5rem 1rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
   }
 
+  /* Show when active */
   .nav.active {
     display: flex;
+    animation: slideDown 0.4s ease-out;
   }
 
   .nav a {
-    padding: 0.8rem 0;
-    font-size: 1rem;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav a::after {
+    bottom: -6px;
+  }
+}
+
+/* Smooth slide-down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
