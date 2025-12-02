@@ -46,7 +46,7 @@
 .dot-big.active { background: #111; box-shadow: 0 0 20px #111; transform: scale(1.6); }
 
 /* SERVICES GRID */
-.all-services { padding: 150px 20px 80px; background: #e7e7e7; }
+.all-services { padding: 10px 20px 80px; background: #e7e7e7; }
 .all-services-title { text-align: center; font-size: 3rem; margin-bottom: 60px; color: black; }
 .services-grid-big { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
 .service-mega-card { background: #111; padding: 50px 30px; border-radius: 20px; text-align: center; border: 2px solid #ff0000; transition: all 0.4s ease; box-shadow: 0 0 15px rgba(255,0,0,0.3); }
@@ -58,7 +58,7 @@
 .service-mega-card:hover .tech, .service-mega-card:hover .desc { color: #fff; }
 
 /* EXTRA SERVICES HIGHLIGHT */
-.extra-services { background: white; color: #fff; padding: 100px 20px; text-align: center; }
+.extra-services { background: white; color: #fff; padding: 20px 20px; text-align: center; }
 .extra-services h2 { font-size: 3rem; margin-bottom: 60px; color: black; font-weight: 900; }
 .extra-services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
 .extra-service-card { background: #000; padding: 30px 20px; border-radius: 20px; border: 2px solid #ff0000; transition: all 0.4s ease; cursor: pointer; }
@@ -68,14 +68,14 @@
 .extra-service-card:hover h3, .extra-service-card:hover p { color: #fff; }
 
 /* TECHNOLOGIES */
-.tech-section { padding: 100px 20px; background:white; }
+.tech-section { padding: 20px 20px; background:white; }
 .tech-title { text-align: center; font-size: 2.5rem; color: #000000; margin-bottom: 60px; }
 .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
 .tech-card { background: #000; padding: 20px 10px; border-radius: 12px; color: #fff; text-align: center; border: 1px solid #ff0000; font-weight: bold; transition: all 0.3s ease; cursor: default; }
 .tech-card:hover { box-shadow: 0 0 30px #ff0000; transform: scale(1.1); }
 
 /* TESTIMONIALS */
-.testimonials { padding: 120px 20px; background: #ffffff; }
+.testimonials { padding: 20px 20px; background: #ffffff; }
 .testimonials .section-title { text-align: center; font-size: 3rem; margin-bottom: 80px; color: black; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; max-width: 1100px; margin: 0 auto; }
 .testimonial-card { background: #000; padding: 30px; border-radius: 15px; text-align: center; border: 2px solid #ff0000; transition: all 0.3s ease; }

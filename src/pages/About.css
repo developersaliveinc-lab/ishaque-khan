@@ -95,7 +95,7 @@
 
 /* ===== OUR EXPERTISE ===== */
 .services-section {
-  padding: 120px 20px;
+  padding: 0px 20px;
   background: white; 
   border-radius: 25px;
   margin: 40px auto;
@@ -147,7 +147,7 @@
 
 /* ===== FOUNDER ===== */
 .founder-section {
-  padding: 100px 20px;
+  padding: 10px 20px;
   background:white;
   text-align: center; 
 }
@@ -205,7 +205,7 @@
 .founder-social a:hover { transform: scale(1.2); color: #fff; }
 
 /* ===== TEAM ===== */
-.team-section { padding: 100px 20px; }
+.team-section { padding: 10px 20px; }
 .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
 
 .team-card {
@@ -234,7 +234,7 @@
 .team-card p { font-size: 1rem; color: #fff; margin-top: 5px; }
 
 /* ===== PARTNERS ===== */
-.partners-section { padding: 80px 20px; text-align: center; }
+.partners-section { padding: 24px 20px; text-align: center; }
 .partners-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; align-items: center; }
 
 .partner-logo { height: 60px; filter: grayscale(80%); transition: all 0.3s; }
