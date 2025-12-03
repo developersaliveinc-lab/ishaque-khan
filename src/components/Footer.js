@@ -5,10 +5,6 @@ import "./Footer.css";
 const Footer = () => {
   const year = new Date().getFullYear();
 
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <footer className="alive-footer">
       {/* Footer Main Sections */}
@@ -76,8 +72,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll Up */}
-      <div className="scroll-top" onClick={scrollTop}>↑</div>
+      {/* SCROLL-TO-TOP BUTTON PURA HATA DIYA GAYA HAI */}
     </footer>
   );
 };
