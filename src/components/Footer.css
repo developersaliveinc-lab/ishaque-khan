@@ -1,4 +1,4 @@
-/* ==================== ALIVE INC FOOTER - FINAL & PERFECT ==================== */
+/* ==================== FINAL FULL WIDTH FOOTER - NO WHITE SPACE ==================== */
 .alive-footer {
   width: 100vw;
   position: relative;
@@ -8,24 +8,31 @@
   color: #fff;
   font-family: 'Arial', sans-serif;
   overflow: hidden;
-  padding: 60px 20px 80px;     /* neeche zyada padding → button safe rahega */
+  padding: 10px 211px 30px;
   box-sizing: border-box;
-  z-index: 1;
 }
 
-/* Main 3 Columns */
-.footer-sections {
+/* Content ko center mein rakho, lekin full width background */
+.footer-container {
   max-width: 1200px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Main 3 columns */
+.footer-sections {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .footer-nav, .footer-services, .footer-contact {
   flex: 1;
-  min-width: 260px;
+  min-width: 250px;
 }
 
 .footer-nav h3,
@@ -33,7 +40,7 @@
 .footer-contact h3 {
   color: #ff3333;
   font-size: 19px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-weight: bold;
 }
 
@@ -46,7 +53,7 @@
 
 .footer-nav ul li,
 .footer-services ul li {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-size: 14.5px;
   color: #ccc;
 }
@@ -59,14 +66,15 @@
 
 .footer-nav ul li a:hover {
   color: #ff3333;
-  padding-left: 5px;
+  padding-left: 4px;
 }
 
+/* Contact */
 .footer-contact p {
-  margin: 12px 0;
+  margin: 10px 0;
   font-size: 14.5px;
   color: #eee;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .footer-contact a {
@@ -78,15 +86,16 @@
   color: #ff3333;
 }
 
+/* Social Icons */
 .footer-social {
-  margin-top: 25px;
+  margin-top: 20px;
   display: flex;
-  gap: 14px;
+  gap: 12px;
 }
 
 .footer-social a {
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   background: #333;
   color: #fff;
   display: flex;
@@ -94,62 +103,52 @@
   justify-content: center;
   border-radius: 50%;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   transition: all 0.3s;
 }
 
 .footer-social a:hover {
   background: #ff3333;
-  transform: translateY(-5px);
+  color: #fff;
+  transform: translateY(-4px);
 }
 
-/* Logo + Copyright — Sab Center Mein */
-.footer-bottom-center {
+/* Logo Section */
+.footer-logo-section {
+    text-align: center;
+    padding-right: 158px;
+    padding: 0px -1px;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.footer-logo {
+  height: 65px;
+  margin-bottom: 8px;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #0f1a22;
+  font-size: 13.5px;
+  color: #aaa;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
-}
-
-.footer-logo-section {
-  margin-bottom: 20px;
-}
-
-.footer-logo {
-  height: 70px;
-}
-
-.tagline {
-  color: #999;
-  font-size: 15px;
-  margin: 10px 0 0;
-  font-style: italic;
-}
-
-.footer-copyright-text p {
-  margin: 8px 0;
-  color: #aaa;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.websites {
-  font-size: 13px !important;
-  color: #888 !important;
 }
 
 .footer-links a {
-  color: #ff3333;
+  color: #aaa;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
-  font-size: 14.5px;
+  margin: 0 10px;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  color: #ff3333;
 }
 
-/* Scroll to Top Button - Ab Kabhi Footer ke Upar Nahi Aayega */
+/* Scroll to Top Button */
 .scroll-top {
   position: fixed;
   bottom: 25px;
@@ -162,12 +161,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 28px;
   cursor: pointer;
-  z-index: 99999;                     /* Sabse upar */
-  box-shadow: 0 5px 25px rgba(255, 51, 51, 0.6);
-  transition: all 0.3s ease;
-  pointer-events: auto;
+  z-index: 9999;
+  box-shadow: 0 5px 20px rgba(255, 51, 51, 0.4);
+  transition: all 0.3s;
 }
 
 .scroll-top:hover {
@@ -178,32 +176,20 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .alive-footer {
-    padding: 50px 15px 90px;   /* mobile pe bhi button safe */
+    padding: 40px 15px 25px;
   }
-  
+
   .footer-sections {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 35px;
   }
-  
+
   .footer-social {
     justify-content: center;
   }
-  
+
   .footer-logo {
-    height: 60px;
-  }
-  
-  .websites {
-    font-size: 12px !important;
-  }
-  
-  .scroll-top {
-    width: 48px;
-    height: 48px;
-    font-size: 24px;
-    bottom: 20px;
-    right: 20px;
+    height: 55px;
   }
 }

@@ -11,9 +11,9 @@ const Footer = () => {
 
   return (
     <footer className="alive-footer">
-
-      {/* Main 3 Columns */}
+      {/* Footer Main Sections */}
       <div className="footer-sections">
+        {/* Quick Links */}
         <div className="footer-nav">
           <h3>Quick Links</h3>
           <ul>
@@ -25,6 +25,7 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Our Services */}
         <div className="footer-services">
           <h3>Our Services</h3>
           <ul>
@@ -44,12 +45,14 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Contact Info */}
         <div className="footer-contact">
           <h3>Alive Inc - Head Office</h3>
           <p>📞 +91 9324745058</p>
           <p>✉️ <a href="mailto:info@aliveinc.in">info@aliveinc.in</a></p>
-          <p>📍 F-85, 1st Floor, Nano-Wing, Fantasia Business Park,<br />Near Inorbit Mall, Sector-30A, Vashi, Navi-Mumbai</p>
+          <p>📍 F-85, 1st Floor, Nano-Wing, Fantasia Business Park, Near Inorbit Mall, Sector-30A, Vashi, Navi-Mumbai</p>
 
+          {/* Social Icons */}
           <div className="footer-social">
             <a href="https://linkedin.com/in/ishaque-shaikh-2004" target="_blank" rel="noopener noreferrer">in</a>
             <a href="https://instagram.com/ishaque.2004" target="_blank" rel="noopener noreferrer">ig</a>
@@ -59,26 +62,22 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Logo + Copyright + Links — Sab Center Mein Logo ke Neeche */}
-      <div className="footer-bottom-center">
-        <div className="footer-logo-section">
-          <img src="/images/footer-logo.png" alt="Alive Inc Logo" className="footer-logo" />
-        
-        </div>
+      {/* Footer Logo */}
+      <div className="footer-logo-section">
+        <img src="/images/footer-logo.png" alt="Alive Inc Logo" className="footer-logo" />
+      </div>
 
-        <div className="footer-copyright-text">
-          <p>© {year} Alive Inc. All Rights Reserved</p>
-          <p className="websites">
-            Websites: metungtech.com | slot938.com | thaicasinobin.com | jqk41.com | thaibet55.com | kuyuluk.com | soccer918.com | huc999.casino | krooree.com | slot5599.com
-          </p>
-          <div className="footer-links">
-            <Link to="/privacy">Privacy</Link> | <Link to="/sitemap">Sitemap</Link>
-          </div>
+      {/* Footer Bottom */}
+      <div className="footer-bottom">
+        <p>© {year} Alive Inc. All Rights Reserved</p>
+        <p>Websites: metungtech.com | slot938.com | thaicasinobin.com | jqk41.com | thaibet55.com | kuyuluk.com | soccer918.com | huc999.casino | krooree.com | slot5599.com</p>
+        <div className="footer-links">
+          <Link to="/privacy">Privacy</Link> | <Link to="/sitemap">Sitemap</Link>
         </div>
       </div>
 
-      {/* Scroll to Top */}
-      <div className="scroll-top" onClick={scrollTop}>Up Arrow</div>
+      {/* Scroll Up */}
+      <div className="scroll-top" onClick={scrollTop}>↑</div>
     </footer>
   );
 };
