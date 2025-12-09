@@ -83,12 +83,12 @@
 .testimonial-card img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid #ff0000; }
 .testimonial-card .feedback { font-style: italic; color: #fff; margin-bottom: 10px; }
 .testimonial-card h4 { color: #ff0000; margin-bottom: 5px; }
-.testimonial-card .position { font-size: 1rem; color: #fff; }
+.testimonial-card .position { font-size: 1.5rem; color: #fff; }
 
 /* CTA */
 .cta-section { padding: 80px 20px; background: #111; text-align: center; }
 .cta-title { font-size: 3rem; color: white; margin-bottom: 30px; }
-.cta-button { display: inline-block; padding: 15px 40px; background: #ff0000; color: #fff; border-radius: 8px; font-size: 1.2rem; text-decoration: none; font-weight: bold; transition: all 0.3s ease; }
+.cta-button { display: inline-block; padding: 15px 40px; background: #ff0000; color: #fff; border-radius: 50px; font-size: 1.2rem; text-decoration: none; font-weight: bold; transition: all 0.3s ease; }
 .cta-button:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff0000; }
 
 /* RESPONSIVE */
