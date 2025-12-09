@@ -8,7 +8,7 @@ const ParticlesBG = () => {
     fpsLimit: 120,
     particles: {
       number: { value: 100 },
-      color: { value: "#00ffff" },
+      color: { value: "#00ffff" },  
       shape: { type: "circle" },
       opacity: { value: 0.5, random: true },
       size: { value: 3, random: true },
