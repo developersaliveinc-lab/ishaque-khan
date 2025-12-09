@@ -149,8 +149,9 @@ const About = () => {
             </div>
 
             <div className="founder-info">
-              <h3>Khabib Nurmagomedov</h3>
-              <p className="role">Founder & CEO</p>
+              <h3>Abid Pathan Sarfuddin
+              </h3>
+              <p className="role">Senior Web Developer & CEO</p>
               <p className="bio">
                 Started from a small room in Vashi with just a laptop and unbreakable willpower.
                 Today leading a team of 50+ warriors serving clients in 15+ countries.
